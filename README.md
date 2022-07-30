@@ -1,5 +1,6 @@
 ## AQUA: Scalable Rowhammer Mitigation by Quarantining Aggressor Rows at Runtime
 Authors: Anish Saxena, Gururaj Saileshwar, Prashant J. Nair, and Moinuddin K. Qureshi
+
 To appear in MICRO 2022
 
 ### Introduction
