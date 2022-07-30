@@ -17,7 +17,7 @@ After installing SPEC-2017 on the disk, for running the SPECint-CPU2017 benchmar
 - **Note**: After all benchmark run-directories are created, please make sure run-directories of all benchmarks have the same naming format.    
 
 
-After completing these steps, all the SPEC benchmnark run-directories should be set up. Now, you can try the next step using `runscript_test.sh` in [README.md](../README.md) to test gem5 functionality and then run all the experiments.
+After completing these steps, all the SPEC benchmnark run-directories should be set up. Now, you can try the next step using `runscript_test.sh` in [README.md](./README.md) to test gem5 functionality and then run all the experiments.
 
 
 

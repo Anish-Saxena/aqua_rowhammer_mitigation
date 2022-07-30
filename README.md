@@ -43,7 +43,7 @@ Here you will recreate results in Figure 3, 6, 7, 9, 10, and 11, by executing th
           - `SPEC-VERSION`: Fixed to be 2017.
           - `RH-DEFENSE-PARAMETERS`: `--rh_defense` enables the defense, `--rh_mitigation=RQ` selects AQUA as the defense (RRS in place of RQ selects RRS defense), and  `--rh_actual_threshold=1000` specifies 1K as the rowhammer threshold. Additional runtime parameters like FPT-cache size, quarantine region size, etc. are present in `run_<aqua-or-rrs>_experiments.sh` scripts. In absence of `--rh_defense` parameter, the baseline configuration is run.
       	- Each configuration is simulated for 250Mn instructions. This takes 8-24 hours per benchmark, per configuration. Benchmarks in 2-3 configurations are run in parallel for a total of up to `MAX_GEM5_PARALLEL_RUNS` (defined in `scripts.env.sh`) parallel Gem5 runs at a time.
-- **Generate results:** **TODO** 
+- **Parse the results:** **TODO** 
 <!-- -`cd stats_scripts; ./data_perf.sh`. This will compare the normalized performance (using weighted speedup metric) vs baseline.
 - The normalized peformance results will be stored in `stats_scripts/data/perf.stat`. 
     - Script to collect the LLC misses-per-thousand-instructions (MPKI) for each of the schemes is also available in `stats_scripts/data_mpki.sh`.
