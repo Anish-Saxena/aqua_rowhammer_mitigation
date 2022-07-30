@@ -43,9 +43,9 @@
 from __future__ import print_function
 from __future__ import absolute_import
 
-import user_defined_benchmarks_spec06
+# import user_defined_benchmarks_spec06
 import user_defined_benchmarks_spec17
-import user_defined_benchmarks_gap
+# import user_defined_benchmarks_gap
 import argparse
 import optparse
 import sys
@@ -112,12 +112,12 @@ numThreads = 1
 numProcesses = options.num_cpus
 
 for i in range(numProcesses):
-    if options.spec_version == "2006":
-        proc = user_defined_benchmarks_spec06.create_proc(options.benchmark,i)
-    elif options.spec_version == "2017":
+    # if options.spec_version == "2006":
+    #     proc = user_defined_benchmarks_spec06.create_proc(options.benchmark,i)
+    if options.spec_version == "2017":
         proc = user_defined_benchmarks_spec17.create_proc(options.benchmark,i)
-    elif options.spec_version == "gap":
-        proc = user_defined_benchmarks_gap.create_proc(options.benchmark,i)
+    # elif options.spec_version == "gap":
+    #     proc = user_defined_benchmarks_gap.create_proc(options.benchmark,i)
     else :
         print('Error No Benchmark Suite Found')
         sys.exit(1)

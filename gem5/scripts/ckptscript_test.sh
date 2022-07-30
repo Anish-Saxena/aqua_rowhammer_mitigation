@@ -100,7 +100,7 @@ $GEM5_PATH/build/X86/gem5_checkpoint.opt \
     --checkpoint-dir=$CKPT_OUT_DIR \
     --take-checkpoint=$INST_TAKE_CHECKPOINT --at-instruction \
     --maxinsts=$MAX_INSTS \
-    --prog-interval=300Hz \
-    >> $SCRIPT_OUT 2>&1 &
+    --prog-interval=300Hz
+    # >> $SCRIPT_OUT 2>&1 &
 
 #     --mem-type=SimpleMemory \
