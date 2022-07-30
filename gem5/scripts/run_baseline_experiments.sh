@@ -19,7 +19,7 @@ for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
     ./runscript.sh $bmk AE.BASELINE.4C 4 2017; 
     ## Wait for a core to be available
     exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
-    while [ $exp_count -gt 68 ]
+    while [ $exp_count -gt ${MAX_GEM5_PARALLEL_RUNS} ]
     do
         sleep 300
         exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`

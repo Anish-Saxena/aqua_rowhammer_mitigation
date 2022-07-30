@@ -5,4 +5,6 @@ gem5/__pycache__/
 gem5/stats/**
 gem5/build/
 gem5/temp_builds/
+gem5/.vscode/
 utils_to_source
+gem5/src.backup.tar.gz

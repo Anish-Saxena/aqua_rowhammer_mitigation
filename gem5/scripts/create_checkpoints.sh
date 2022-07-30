@@ -10,6 +10,14 @@ echo "Creating 1-Core Checkpoints for 18 Benchmarks"
 for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
   blender deepsjeng imagick leela nab exchange2 roms xz parest; do 
     ./ckptscript.sh $bmk 1 2017; 
+    # Wait for a core to be available
+    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    while [ $exp_count -gt ${MAX_GEM5_PARALLEL_RUNS} ]
+    do
+        sleep 300
+        exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+        echo
+    done
 done
 
 # ####### 4-Core SPEC2017 Experiments #######
@@ -19,6 +27,14 @@ for bmk in perlbench gcc bwaves mcf cactuBSSN namd povray lbm wrf\
  mix1 mix2 mix3 mix4 mix5 mix6 mix7 mix8 mix9 mix10\
  mix11 mix12 mix13 mix14 mix15 mix16; do 
     ./ckptscript.sh $bmk 4 2017; 
+    # Wait for a core to be available
+    exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+    while [ $exp_count -gt ${MAX_GEM5_PARALLEL_RUNS} ]
+    do
+        sleep 300
+        exp_count=`ps aux | grep -i "gem5" | grep -v "grep" | wc -l`
+        echo
+    done
 done
 
 wait 
