@@ -1,0 +1,4 @@
+celery
+
+[flower]
+flower

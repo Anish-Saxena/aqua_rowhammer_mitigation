@@ -1,0 +1,20 @@
+Expts    ,BASELINE.50Bn_FF.4,TV_16KB_CACHE.1K.4C/
+perlbench,1.000             ,1.000
+gcc      ,1.000             ,0.991
+bwaves   ,1.000             ,1.000
+mcf      ,1.000             ,0.866
+cactuBSSN,1.000             ,1.047
+namd     ,1.000             ,0.999
+povray   ,1.000             ,1.000
+lbm      ,1.000             ,0.802
+wrf      ,1.000             ,0.923
+blender  ,1.000             ,0.991
+deepsjeng,1.000             ,1.000
+imagick  ,1.000             ,1.001
+leela    ,1.000             ,1.000
+nab      ,1.000             ,0.999
+exchange2,1.000             ,1.000
+roms     ,1.000             ,0.892
+xz       ,1.000             ,0.969
+parest   ,1.000             ,0.978
+SPEC-18,1.000,0.968

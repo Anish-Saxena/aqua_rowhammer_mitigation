@@ -1,0 +1,8 @@
+cpts/multiprogram**
+cpts/output/multiprogram**
+extras/**
+gem5/__pycache__/
+gem5/stats/**
+gem5/build/
+gem5/temp_builds/
+utils_to_source
