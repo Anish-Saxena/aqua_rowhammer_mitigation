@@ -27,13 +27,13 @@ then
 else
     echo "GEM5_PATH is set to '$GEM5_PATH'";
 fi
-#Need to export SPEC_PATH
-if [ -z ${SPEC_PATH+x} ];
+#Need to export SPEC17_PATH
+if [ -z ${SPEC17_PATH+x} ];
 then
-    echo "SPEC_PATH is unset";
+    echo "SPEC17_PATH is unset";
     exit
 else
-    echo "SPEC_PATH is set to '$SPEC_PATH'";
+    echo "SPEC17_PATH is set to '$SPEC17_PATH'";
 fi
 #Need to export CKPT_PATH
 if [ -z ${CKPT_PATH+x} ];
@@ -70,7 +70,7 @@ echo "Command line:"                                | tee $SCRIPT_OUT
 echo "$0 $*"                                        | tee -a $SCRIPT_OUT
 echo "================= Hardcoded directories ==================" | tee -a $SCRIPT_OUT
 echo "GEM5_PATH:                                     $GEM5_PATH" | tee -a $SCRIPT_OUT
-echo "SPEC_PATH:                                     $SPEC_PATH" | tee -a $SCRIPT_OUT
+echo "SPEC17_PATH:                                     $SPEC17_PATH" | tee -a $SCRIPT_OUT
 echo "==================== Script inputs =======================" | tee -a $SCRIPT_OUT
 echo "BENCHMARK:                                    $BENCHMARK" | tee -a $SCRIPT_OUT
 echo "OUTPUT_DIR:                                   $OUTPUT_DIR" | tee -a $SCRIPT_OUT
@@ -88,7 +88,7 @@ echo "" | tee -a $SCRIPT_OUT
 echo "" | tee -a $SCRIPT_OUT
 
 # Launch Gem5:
-$GEM5_PATH/build/X86/gem5_checkpoint.opt \
+$GEM5_PATH/build/X86/gem5.opt \
     --outdir=$OUTPUT_DIR \
     $GEM5_PATH/configs/example/se_rq_spec_config_multicore.py \
     --redirects /lib64=/home/gattaca4/gururaj/LOCAL_LIB/python/anaconda3/lib \

@@ -1,36 +1,36 @@
-Expts    ,.RRS_NO_DELAY.1K.4C/
-perlbench,0.741
-gcc      ,6.316
+Expts    ,7.C4/O3.BASELINE.4C/
+perlbench,0.743
+gcc      ,6.320
 bwaves   ,0.211
 mcf      ,7.020
-cactuBSSN,2.568
+cactuBSSN,2.569
 namd     ,0.376
 povray   ,0.005
 lbm      ,20.868
 wrf      ,0.024
-blender  ,14.784
+blender  ,14.842
 deepsjeng,0.248
 imagick  ,0.267
 leela    ,0.025
 nab      ,0.541
 exchange2,0.007
-roms     ,4.374
+roms     ,4.376
 xz       ,0.410
 parest   ,0.103
-mix1     ,0.856
+mix1     ,0.864
 mix2     ,0.573
 mix3     ,0.274
-mix4     ,2.386
-mix5     ,2.216
-mix6     ,2.190
-mix7     ,0.689
-mix8     ,0.617
-mix9     ,1.232
-mix11    ,1.744
-mix13    ,8.391
-mix14    ,1.206
-mix16    ,3.072
-mix17    ,2.738
-mix18    ,3.252
-mix19    ,1.158
-Amean    ,2.691
+mix4     ,2.402
+mix5     ,2.223
+mix6     ,2.195
+mix7     ,0.697
+mix8     ,0.618
+mix9     ,1.233
+mix11    ,1.750
+mix13    ,8.393
+mix14    ,1.213
+mix16    ,3.074
+mix17    ,2.742
+mix18    ,3.266
+mix19    ,1.162
+Amean    ,2.695

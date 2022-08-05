@@ -4,7 +4,7 @@ After installing SPEC-2017 on the disk, for running the SPECint-CPU2017 benchmar
 - We **strongly recommend** changing the compiler optimization for microarchitecture and setting it to `athlon64` to ensure gem5 doesn't encounter unknown instructions. Specifically, we used `OPTIMIZE = -g -O3 -march=athlon64 -fno-unsafe-math-optimizations -fno-tree-loop-vectorize`.
 - Run the following command: `runcpu --config=gem5_se_test --action=build 500.perlbench_r`. This command should build a benchmark (if it does not exist), create run directories and copy the executable & inputs to run folder and then run the benchmark. 
     - A helpful resource for understanding this process can be the [SPEC2017 installation page](https://www.spec.org/cpu2017/Docs/install-guide-unix.html), which outlines the steps to install and test SPEC benchmarks.
-- Check `$SPEC_PATH//SPEC2017_inst/benchspec/CPU/500.perlbench_r/run/`: there should be a run folder (like `run_base_refrate_gem5_se-m64.0000`) containing the executable and input files (e.g. `checkspam.pl`) for the benchmark.
+- Check `$SPEC17_PATH//SPEC2017_inst/benchspec/CPU/500.perlbench_r/run/`: there should be a run folder (like `run_base_refrate_gem5_se-m64.0000`) containing the executable and input files (e.g. `checkspam.pl`) for the benchmark.
 - The exact name of the run-folder might be different based on your OS/CPU/compiler. If so, please follow the steps:
     * Open `spec17_benchmarks.py` file in `gem5/configs/example` directory.
     * Update the `RUN_DIR_postfix` variable as with run-folder (like `run_base_refrate_gem5_se-m64.0000`) and `x86_suffix` variable with executable binary postfix (like `_r_base.gem5_se-m64`).

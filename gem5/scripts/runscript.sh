@@ -30,13 +30,13 @@ then
 else
     echo "GEM5_PATH is set to '$GEM5_PATH'";
 fi
-#Need to export SPEC_PATH
-if [ -z ${SPEC_PATH+x} ];
+#Need to export SPEC17_PATH
+if [ -z ${SPEC17_PATH+x} ];
 then
-    echo "SPEC_PATH is unset";
+    echo "SPEC17_PATH is unset";
     exit
 else
-    echo "SPEC_PATH is set to '$SPEC_PATH'";
+    echo "SPEC17_PATH is set to '$SPEC17_PATH'";
 fi
 #Need to export CKPT_PATH
 if [ -z ${CKPT_PATH+x} ];
