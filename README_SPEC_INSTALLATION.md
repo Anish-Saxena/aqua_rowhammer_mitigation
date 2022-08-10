@@ -23,7 +23,7 @@ After installing SPEC-2017 on the disk, for running the SPECint-CPU2017 benchmar
     - You can check the command used in `cpts/output/multiprogram_16GBmem_1Mn.SPEC2017.C4/checkpoint_out/perlbench/runscript.log`.
 
 #### 4. Generate run directories for all SPEC17 workloads
-- Once perlbench is successfully tested, to generate the run directories and also perform a test run for all the benchmarks, use: `runcpu --config=gem5_se_test --action=run --size=ref --copies=1  --noreportable  --iterations=1 intrate`.  You can also use `--action=runsetup` instead of `--action=run` to avoid doing a test run and only generating the run directories.
+- Once perlbench is successfully tested, to generate the run directories and also perform a test run for all the benchmarks, use: `runcpu --config=gem5_se_test --action=run --size=ref --copies=1  --noreportable  --iterations=1 intrate fprate`.  You can also use `--action=runsetup` instead of `--action=run` to avoid doing a test run and only generating the run directories.
 - **Note**: After all benchmark run-directories are created, please make sure run-directories of all benchmarks have the same naming format.    
 
 
