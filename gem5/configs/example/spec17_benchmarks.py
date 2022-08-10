@@ -4,7 +4,7 @@ import os
 
 ## Paths
 SPEC_PATH       = os.environ['SPEC17_PATH']
-RUN_DIR_prefix  = '/SPEC2017_inst/benchspec/CPU/'
+RUN_DIR_prefix  = '/benchspec/CPU/'
 RUN_DIR_postfix = '_r/run/run_base_refrate_gem5_se-m64.0000/'
 x86_suffix = '_r_base.gem5_se-m64'
 
