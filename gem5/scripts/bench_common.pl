@@ -276,13 +276,13 @@ mix6
 mix7 
 mix8 
 mix9 
-mix11 
+mix10
+mix11
+mix12 
 mix13 
-mix14 
-mix16 
-mix17 
-mix18 
-mix19';
+mix14
+mix15 
+mix16';
 
 $SUITES{'spec17_bh_all'} =
 'perlbench 
@@ -304,16 +304,18 @@ mix1
 mix2 
 mix3 
 mix4 
+mix5 
 mix6 
 mix7 
 mix8 
 mix9 
-mix11 
-mix14 
-mix16 
-mix17 
-mix18 
-mix19';
+mix10
+mix11
+mix12 
+mix13 
+mix14
+mix15 
+mix16';
 
 $SUITES{'spec17_single'} =
 'perlbench 
@@ -345,7 +347,10 @@ mix6
 mix7 
 mix8 
 mix9 
-mix11 
+mix10
+mix11
+mix12 
 mix13 
-mix14 
+mix14
+mix15 
 mix16';
